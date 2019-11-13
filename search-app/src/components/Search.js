@@ -61,10 +61,10 @@ export default class Search extends Component {
             return count;
         }
         else if(target > value) {
-            this.binarySearch(sortedArray, target, midIndex +1, end, count)
+            return this.binarySearch(sortedArray, target, midIndex +1, end, count)
         }
         else if(target < value) {
-            this.binarySearch(sortedArray, target, start, midIndex -1, count)
+            return this.binarySearch(sortedArray, target, start, midIndex -1, count)
         }
 
     };
